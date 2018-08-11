@@ -18,7 +18,8 @@
 <script language="javascript" type="text/javascript">
 function playSound(soundfile) {
   document.getElementById("dummy").innerHTML= "<embed src=\""
-    +soundfile+"\" hidden=\"true\" autostart=\"true\"loop=\"false\" />";
+    +soundfile+"\" hidden=\"true\" 
+    autostart=\"true\"loop=\"false\" />";
 }
 </script>
 		<title>Executive Board</title>
@@ -151,13 +152,14 @@ function playSound(soundfile) {
 					</div>
 					<br>
 					<br>
+					<span id="dummy"></span>
 					<header>
 						<h2>Human Rights Council</h2>
 					</header>
 					<div class="flex flex-4">
 						<div class="box person">
 							<div class="image round">
-								<a href="" onclick="playSound('chumchum.mp3');">
+								<a href="#" onclick="playSound('audio/chumchum.mp3');">
 								<img src="images/adityakumar.jpg" alt="" />
 							</a>
 							</div>
