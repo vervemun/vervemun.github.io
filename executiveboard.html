@@ -156,24 +156,27 @@
 						<div class="box person">
 							<div class="image round">
 						<img src="images/adityakumar.jpg" onclick="playAudio()" alt="" />
-						<script>
-var x = document.getElementById("myAudio"); 
-
-function playAudio() { 
-    x.play(); 
-} 
-</script>
 							</div>
 							<h3>Aditya Kumar</h3>
 							<p>Chairman</p>
 						</div>
 						<div class="box person">
 							<div class="image round">
-							<img src="images/nandini.jpg" alt="" />
+							<img src="images/nandini.jpg" onclick="pauseAudio()" alt="" />
 							</div>
 							<h3>Nandini Ramesh</h3>
 							<p>Co Chair</p>
 						</div>
+						<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+    x.play(); 
+} 
+function pauseAudio() { 
+    x.pause(); 
+} 
+</script>
 						<div class="box person">
 							<div class="image round">
 								<img src="images/saatvikdabral.jpg" alt="" />
