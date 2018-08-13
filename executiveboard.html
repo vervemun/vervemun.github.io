@@ -316,13 +316,27 @@ function pauseAudio() {
 					<header>
 						<h2>African Union</h2>
 					</header>
+					<audio id="rap">
+  						<source src="laksh_rap.ogg" type="audio/ogg">
+  								Your browser does not support the audio element.
+					</audio>
 					<div class="flex flex-4">
 						<div class="box person">
 							<div class="image round">
-								<img src="images/laksh.jpg" alt="" />
+								<img src="images/laksh.jpg" onclick="playAudio()" alt="" />
 							</div>
 							<h3>Laksh Verma</h3>
 							<p>Chairman</p>
+							<script>
+var x = document.getElementById("rap"); 
+
+function playAudio() { 
+    x.play(); 
+} 
+function pauseAudio() { 
+    x.pause(); 
+} 
+</script>
 						</div>
 						<div class="box person">
 							<div class="image round">
