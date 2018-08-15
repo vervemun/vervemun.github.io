@@ -351,13 +351,19 @@ function pauseAudio2() {
 					<header>
 						<h2>UEFA</h2>
 					</header>
+					<script>
+						document.getElementsByName('videoTitle')[0].innerHtml = 'PAANI NHI AA RHAAAAA'
+					</script>
 					<div class="flex flex-4">
 						<div class="box person">
 							<div class="image round">
-								<img src="images/aryakant.jpg" alt="" />
+								<img src="images/aryakant.jpg" alt="" onclick="this.src='images/abhijeetmanna.jpg';document.getElementsByName('videoTitle')[0].getElementsByTagName('font')[0].innerHTML = 'PAANI NHI AA RHAAAAA'" />
 							</div>
+							<span name='videoTitle'><font>
 							<h3>Arya Kant</h3>
 							<p>Chairman</p>
+						</font>
+						</span>
 						</div>
 						<div class="box person">
 							<div class="image round">
