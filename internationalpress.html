@@ -97,13 +97,6 @@
 					<div class="flex flex-4">
 						<div class="box person">
 							<div class="image round">
-								<img src="images/ananyagupta.jpg" alt="" />
-							</div>
-							<h3>Ananya Gupta</h3>
-							<p></p>
-						</div>
-						<div class="box person">
-							<div class="image round">
 								<img src="images/sachika.jpg" alt="" />
 							</div>
 							<h3>Sachika Khurana</h3>
@@ -114,6 +107,35 @@
 								<img src="images/navya.jpg" alt="" />
 							</div>
 							<h3>Navya Paliwal</h3>
+							<p></p>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="images/ananyagupta.jpg" alt=""id="hh" onclick="playVid()" />
+								<video id="myVideo" width="100%" height="100%" style="display:none" onclick="pauseVid()">
+  <source src="radhe.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+							</div>
+							<script> 
+var vid = document.getElementById("myVideo");
+var im = document.getElementById("hh");
+
+function playVid() { 
+    vid.play();
+    vid.style.display = "block";
+    im.style.display="none";
+} 
+
+function pauseVid() { 
+    vid.pause();
+    vid.style.display = "none";
+    im.style.display = "block";
+    
+} 
+</script> 
+
+							<h3>Ananya Gupta</h3>
 							<p></p>
 						</div>
 						<div class="box person">
